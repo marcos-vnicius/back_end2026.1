@@ -41,8 +41,7 @@ def main():
                 print(f"\nO resultado da dvisão é igual a {calculadora_python.dividir()}")
 
             else:
-                mensagem = f"[Operação Inválida]"
-                return mensagem
+                print(f"[Operação Inválida]")
             
             opcao_2 = input("Fazer outra operação? [1 - Sim] ou [Qualquer tecla para encerrar] -> ")
             if opcao_2 in ["1", "sim", "s"]:
