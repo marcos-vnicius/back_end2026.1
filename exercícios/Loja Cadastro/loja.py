@@ -85,7 +85,7 @@ def main():
             elif op == 5:
                 ver_carrinho()
             elif op == 6:
-                print("Saindo...")
+                print("\nSaindo...")
                 break
             else:
                 print("\n[Opção Inválida! Tente novamente.]")
