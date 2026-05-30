@@ -1,0 +1,29 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Meu Site{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Meu Site</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Início</a></li>
+            <li><a href="/about/">Sobre</a></li>
+            <li><a href="/contact/">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% block content %}
+        <p>Conteúdo principal vai aqui.</p>
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2026 Meu Site</p>
+    </footer>
+</body>
+</html>
