@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1> {{ msg }} </h1>
+        <table border="1">
+            <thead style="background-color: rgb(187, 187, 187);">
+                <th>Nome</th>
+                <th>Curso</th>
+                <th>Turma</th>
+                <th>Ação</th>
+            </thead>
+            
+            <tbody>
+                {% for lista_alunos in list_alunos %}
+                <tr>
+                    <td>{{ lista_alunos.nome }}</td>
+                    <td>{{ lista_alunos.curso }}</td>
+                    <td>{{ lista_alunos.turma }}</td>
+                    <td><button>editar</button><button>excluir</button></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+
+    </main>
+</body>
+</html>
