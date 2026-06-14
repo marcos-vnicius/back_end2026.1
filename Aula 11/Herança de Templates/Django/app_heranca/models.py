@@ -10,3 +10,5 @@ class Cliente(models.Model):
     # METODO PARA EXIBIR OS CLIENTES
     def __str__(self):
         return self.nome
+    
+
