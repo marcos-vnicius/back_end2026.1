@@ -16,7 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from biblioteca.views import index, cadastro_usuario, conta, emprestimos, listar_livros, listar_usuarios, cad_livros
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index, name="inicio"),
+    path('cadastrar/', cadastro_usuario, name="cadastro"),
+    path('emprestimos/', emprestimos, name='listar_emprestimos'),
+    path('cadastrar_livros/', cad_livros, name='cadastrar_livros'),
+    path('lista_livros/', listar_livros, name='listar_livros'),
+    path('lista_usuarios/', listar_usuarios, name='listar_usuarios'),
+    path('conta/<int:conta_id>/', conta, name='conta')
 ]
